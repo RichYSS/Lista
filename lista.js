@@ -36,10 +36,7 @@ function agregar() {
 
     for (let i = 0; i < array.length; i++) {
       if (array[i] != valor || array.includes(ran) > num) {
-        let p = addList(
-          "p",
-          "Ya se agragaron las 5 canciones o esta repetida."
-        );
+        let p = addList("p", "Ya se agragaron las 5 canciones");
         sec.appendChild(p);
       } else {
         console.log("sigue agregando mas canciones");
