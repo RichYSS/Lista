@@ -28,15 +28,18 @@ function agregar() {
     let num = 5;
     let valor = inp.value;
     let ran = Math.floor(Math.random() * num + 1);
-    array.push(valor,ran);
+    array.push(valor, ran);
     inp.value = "";
 
     console.log(array);
-    pendiente
+    pendiente;
 
     for (let i = 0; i < array.length; i++) {
-      if (array[i] != valor || array.includes(ran) >= num) {
-        let p = addList("p", "Ya se agragaron las 5 canciones o esta repetida.");
+      if (array[i] != valor || array.includes(ran) > num) {
+        let p = addList(
+          "p",
+          "Ya se agragaron las 5 canciones o esta repetida."
+        );
         sec.appendChild(p);
       } else {
         console.log("sigue agregando mas canciones");
